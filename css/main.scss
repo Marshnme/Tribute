@@ -1,5 +1,28 @@
-$mycolor: #005dff;
+$colors:(
+    primary: #005dff,
+    accent: #fff6bb,
 
-body{
-    background-color:$mycolor;
+);
+
+@function color($color-name){
+    @return map-get($colors,$color-name)
 }
+
+
+body {
+    background-color:color(primary);
+}
+
+// CSS GRID // 
+.container{
+    display:grid;
+    grid-gap:1em;
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-columns:repeat(5, 1fr);
+}
+
+// .grid{
+//     display:grid;
+//     grid-auto-rows: minmax(100px,auto);
+//     grid-template-columns:repeat(5, 1fr);
+// }
