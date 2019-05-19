@@ -1,18 +1,18 @@
-html {
-  background: url(../images/back.jpg) no-repeat center center fixed;
-  background-size: cover;
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
-.container header {
+.container header, .container main {
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(150px, auto);
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
-.container header .main {
+.container header .main, .container main .main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -22,7 +22,7 @@ html {
   letter-spacing: .2em;
 }
 
-.container header .r {
+.container header .r, .container main .r {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -39,11 +39,37 @@ html {
           transform-origin: right left 0;
 }
 
-.container header .a {
+.container header .a, .container main .a {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
   color: #ffff;
   letter-spacing: 1px;
+}
+
+main h1, main p {
+  color: #ffff;
+}
+
+main h1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.bg-header {
+  background-image: url("/images/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-main {
+  background-image: url("/images/jcole.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,20 +9,23 @@ $colors:(
 
 $margin-top:2em;
 
-html{
-    background: url(../images/back.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+// html{
+//     background: url(../images/back.jpg) no-repeat center center fixed;
+//     -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+body{
+    margin:0px;
+    padding:0px;
 }
 
-
 // CSS GRID // 
-.container header{
+.container header ,.container main{
     display:grid;
     grid-gap:1em;
-    grid-auto-rows: minmax(100px,auto);
+    grid-auto-rows: minmax(150px,auto);
     grid-template-columns:repeat(3, 1fr);
 
     .main{
@@ -51,3 +54,24 @@ html{
         }
     }
     
+     main{
+        h1, p{
+            color:color(primary);
+        }
+        h1{
+            grid-column: 1/4;
+            justify-self: center;
+        }
+  
+     }
+     .bg-header { background-image: url("/images/back.jpg"); 
+             background-position: center; 
+             background-repeat: no-repeat; 
+             background-size: cover; 
+            
+    }
+     .bg-main{ background-image: url("/images/jcole.jpg");
+        background-position: top; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+     }
