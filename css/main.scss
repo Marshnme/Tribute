@@ -64,14 +64,21 @@ body{
         }
   
      }
-     .bg-header { background-image: url("/images/back.jpg"); 
-             background-position: center; 
-             background-repeat: no-repeat; 
-             background-size: cover; 
+     .bg-header { background: url("/images/back.jpg") no-repeat center center; 
+        -webkit-background-size: cover;
+       -moz-background-size: cover;
+      -o-background-size: cover;    
+        background-size: cover; 
+        padding-bottom:500px;
+        
             
     }
-     .bg-main{ background-image: url("/images/jcole.jpg");
-        background-position: top; 
-        background-repeat: no-repeat; 
+     .bg-main{ background: url("/images/jc3.jpg") no-repeat  ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;    
         background-size: cover; 
+        
+        
+       
      }
