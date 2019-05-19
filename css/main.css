@@ -1,5 +1,6 @@
-body {
-  background-color: #005dff;
+html {
+  background: url(../images/back.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
