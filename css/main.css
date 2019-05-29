@@ -62,11 +62,14 @@ main h1 {
 .bg-header {
   background: url("/images/back.jpg") no-repeat center center;
   background-size: cover;
-  padding-bottom: 500px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .bg-main {
   background: url("/images/jc3.jpg") no-repeat;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

@@ -42,14 +42,14 @@ body{
          letter-spacing: .5em;
         text-orientation:sideways;
          margin-left: 150px;
-         // margin:$margin-top;
+         
          transform: rotate(270deg);
          transform-origin: right left 0;
     }
     .a{
         grid-column: 3/4;
         color:color(primary);            
-        // margin:$margin-top;
+        
          letter-spacing:1px;
         }
     }
@@ -69,7 +69,8 @@ body{
        -moz-background-size: cover;
       -o-background-size: cover;    
         background-size: cover; 
-        padding-bottom:500px;
+        width:100vw;
+        height:100vh;
         
             
     }
@@ -78,6 +79,8 @@ body{
         -moz-background-size: cover;
         -o-background-size: cover;    
         background-size: cover; 
+        width:100vw;
+        height:100vh;
         
         
        
