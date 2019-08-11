@@ -1,70 +1,32 @@
+* {
+  border: 1px solid white;
+}
+
 body {
   margin: 0px;
   padding: 0px;
 }
 
-.container header, .container main {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 1em;
-  grid-auto-rows: minmax(150px, auto);
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  color: white;
 }
 
-.container header .main, .container main .main {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  color: #ffff;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  letter-spacing: .2em;
-}
-
-.container header .r, .container main .r {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  color: #ffff;
-  font-size: 4em;
-  letter-spacing: .5em;
-  text-orientation: sideways;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-
-.container header .a, .container main .a {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  color: #ffff;
-  letter-spacing: 1px;
-}
-
-main h1, main p {
-  color: #ffff;
-}
-
-main h1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.bg-header {
-  background: url("/images/back.jpg") no-repeat center center;
+.bg-main {
+  background: url("") no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
 }
 
-.bg-main {
-  background: url("/images/jc3.jpg") no-repeat;
+.container {
+  background: url("/images/bg.jpg") no-repeat center center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
